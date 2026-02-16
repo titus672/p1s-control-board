@@ -1,0 +1,3 @@
+pulseview_captures/*
+src/build/*
+.cache
