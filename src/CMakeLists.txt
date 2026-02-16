@@ -1,3 +1,21 @@
+##cmake_minimum_required(VERSION 3.13...3.27)
+#
+## initialize the SDK based on PICO_SDK_PATH
+## note: this must happen before project()
+#
+#include(/home/titus/repos/p1s-reverse-engineering/src/pico-sdk/pico_sdk_init.cmake)
+#
+#project(p1s_switch_panel)
+#
+## initialize the Raspberry Pi Pico SDK
+#
+## rest of your project
+#
+#add_executable(p1s_switch_panel
+#  switch_panel.c
+#)
+#
+#target_link_libraries(pico_stdlib)
 
 cmake_minimum_required(VERSION 3.13)
 set(PICO_SDK_PATH "${CMAKE_CURRENT_SOURCE_DIR}/pico-sdk")
