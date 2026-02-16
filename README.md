@@ -18,16 +18,17 @@ The repository is organized as follows:
 ### 1. Clone the Repository
 To ensure the `pico-sdk` submodule is populated, clone using the `--recursive` flag:
 
-git clone --recursive https://github.com/titus672/p1s-control-board.git
+```git clone --recursive https://github.com/titus672/p1s-control-board.git ```
 
 ### 2. Build the Firmware
 Ensure you have the ARM GCC toolchain and CMake installed.
-
+```bash
 cd src
 mkdir build
 cd build
 cmake .. -DPICO_BOARD=pico2_w -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 make
+```
 
 ### 3. Flash to Pico
 1. Hold the **BOOTSEL** button on your Pico and plug it into your USB port.
